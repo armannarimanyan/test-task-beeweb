@@ -1,0 +1,35 @@
+<div 
+style="    
+background-color: rgb(48, 46, 46);
+width: 40%;
+height: 20%;
+padding: 20px 20px 0 20px;
+text-align:center">
+    <h1 style="color: rgb(255, 123, 0);">Wellcome BeeWeb</h1>
+</div>
+<section class="user-section" ng-if="users.length>0">
+    <div class="chat">
+        <div class="dialog" ng-repeat="dialog in chats" >
+            <div class="user-dialog-info">
+                <span>Username: &nbsp;&nbsp;</span>
+                <span class="text-success">{{dialog.name}}</span>
+            </div>
+            <div class="send-message">
+                <div class="show-messages">
+
+                </div>
+                <div class="enter-messages">
+                    <input type="text" ng-model="message" placeholder=".....">
+                    <button ng-click="sendMessage(message)">Send</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="users-list" >
+        <div class="user-data" ng-repeat="user in users" ng-if="user._id !== curentUserId" ng-click="openChat(user)">
+            <span class="us-name" >{{user.name}}</span>
+            <span class="us-name">{{user.userName}}</span>
+        </div>
+    </div>
+    
+</section>

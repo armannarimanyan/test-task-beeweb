@@ -1,0 +1,72 @@
+*{
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.navbar{
+    background-color: rgb(39, 38, 38);
+}
+.container-fluid{
+    display: flex;
+    justify-content: flex-end;
+}
+.color-bee{
+    color: rgb(255, 123, 0) !important;
+}
+.user-section{
+    display: flex;
+    justify-content: space-between;
+}
+.chat{
+    height: 100vh;
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 40px;
+}
+.dialog{
+    transform: translate(50%, 44vh);
+    height: 100px;
+    padding: 0 10px;
+    margin-left: 10px;
+    background-color: rgb(255, 123, 0);
+    color: rgb(32, 32, 32);
+    border-radius: 5px;
+}
+.show-messages{
+    height: 50px;
+}
+.enter-messages{
+    display: flex;
+}
+button,input{
+    border: none;
+    outline: none;
+}
+button{
+    cursor: pointer;
+}
+.users-list{
+    width: 25%;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    box-shadow: 0 0 0 2px rgb(255, 123, 0);
+    background-color: rgb(255, 123, 0);
+    padding: 10px;
+    transform: translate(30%, -130px);
+
+}
+.user-data{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    background-color: rgb(44, 43, 43);
+    border: 1px solid rgb(255, 123, 0);
+}
+.us-name{
+    padding: 0 3px;
+    color: rgb(255, 123, 0) ;
+}
